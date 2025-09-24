@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Java Chocolates LTDA | CNPJ 20.261.126/0001-27</title>
+  <meta name="description" content="Java Chocolates — fabricação de produtos derivados do cacau e chocolates. Empresa sediada em Belo Horizonte-MG." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --max:1100px;
+      --accent:#8c1c13;
+      --accent2:#cb4141;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --bg:#fafafa;
+      --radius:12px;
+      font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:#222;}
+    a{color:var(--accent); text-decoration:none;}
+    .wrap{max-width:var(--max);margin:32px auto;padding:24px;}
+    header{display:flex;justify-content:space-between;align-items:center;gap:20px;}
+    .logo{font-size:28px; font-weight:700; color:var(--accent);}
+    nav a{margin-left:16px;font-weight:600;color:#333;}
+    .hero{display:grid; grid-template-columns:1fr 300px; gap:24px; margin-top:32px;}
+    .card{background:var(--card); padding:24px; border-radius:var(--radius); box-shadow:0 4px 20px rgba(0,0,0,0.05);}
+    .lead{color:var(--muted); margin-top:8px;}
+    .features{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:20px;}
+    .feature{padding:16px; border-radius:var(--radius); background:rgba(140,28,19,0.05);}
+    .services{display:grid; grid-template-columns:repeat(2,1fr); gap:16px; margin-top:20px;}
+    .service{padding:14px; border-radius:var(--radius); background:rgba(203,65,65,0.05);}
+    form{display:grid; gap:12px;}
+    input, textarea{padding:12px; border:1px solid #ddd; border-radius:var(--radius);}
+    textarea{min-height:100px; resize:vertical;}
+    .btn{display:inline-block;padding:12px 20px;border-radius:var(--radius);background:linear-gradient(90deg,var(--accent),var(--accent2));color:#fff;font-weight:700;}
+    footer{margin-top:40px;text-align:center;color:var(--muted); font-size:14px;}
+    @media(max-width:800px){
+      .hero{grid-template-columns:1fr;}
+      .features{grid-template-columns:1fr 1fr;}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">Java Chocolates LTDA</div>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <h2>Especialistas em chocolates e derivados do cacau</h2>
+        <p class="lead">Fundada em 15/05/2014, a Java Chocolates atua na fabricação de produtos derivados do cacau, com sede em Belo Horizonte-MG. CNPJ: 20.261.126/0001-27. CNAE principal: Fabricação de produtos derivados do cacau e chocolates. :contentReference[oaicite:0]{index=0}</p>
+
+        <div class="features">
+          <div class="feature"><strong>Qualidade premium</strong><br>Produção com matérias-primas selecionadas</div>
+          <div class="feature"><strong>Linha variada</strong><br>Chocolates artesanais e industrializados</div>
+          <div class="feature"><strong>Distribuição</strong><br>Atuação regional e atacado</div>
+        </div>
+      </div>
+
+      <aside class="card">
+        <h3>Contato rápido</h3>
+        <div><strong>Telefone:</strong> (31) 2520-6776 :contentReference[oaicite:1]{index=1}</div>
+        <div><strong>E-mail:</strong> contato@javachocolates.com.br :contentReference[oaicite:2]{index=2}</div>
+        <div style="margin-top:16px;"><a href="#contato" class="btn">Fale conosco</a></div>
+      </aside>
+    </section>
+
+    <section id="sobre" style="margin-top:32px">
+      <div class="card">
+        <h3>Sobre a Java Chocolates</h3>
+        <p>Empresa estabelecida em Belo Horizonte (MG), localizada na Rua Euclásio, nº 391, bairro Santa Efigênia, CEP 30260-220. :contentReference[oaicite:3]{index=3}</p>
+        <p>Atua com fabricação de produtos derivados do cacau e chocolates (CNAE 10.93-7-01) e possui também atividade secundária no comércio atacadista de alimentos. :contentReference[oaicite:4]{index=4}</p>
+      </div>
+    </section>
+
+    <section id="produtos" style="margin-top:32px">
+      <div class="card">
+        <h3>Nossos produtos</h3>
+        <div class="services">
+          <div class="service"><strong>Tabletes e barras de chocolate</strong></div>
+          <div class="service"><strong>Bombons e trufas</strong></div>
+          <div class="service"><strong>Chocolate funcional / enriquecido</strong></div>
+          <div class="service"><strong>Derivados do cacau</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" style="margin-top:32px">
+      <div class="card">
+        <h3>Fale com a gente</h3>
+        <form action="#" method="post">
+          <input name="nome" type="text" placeholder="Seu nome" required>
+          <input name="email" type="email" placeholder="Seu e-mail" required>
+          <input name="telefone" type="text" placeholder="Telefone / WhatsApp">
+          <textarea name="mensagem" placeholder="Digite sua mensagem"></textarea>
+          <div><button class="btn" type="submit">Enviar mensagem</button></div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      © Java Chocolates LTDA • CNPJ 20.261.126/0001-27
+    </footer>
+  </div>
+</body>
+</html>
